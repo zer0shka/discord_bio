@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/index.css" rel="stylesheet">
+      <link rel="icon" type="image/x-icon" href="https://i.ibb.co/jfD0r9W/logo.png">
+      <title>whyalive.bio</title>
+      <style>
+        /* Overlay styles */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+
+        /* Hide the overlay by default */
+        #overlay.hidden {
+            display: none;
+        } 
+    </style>
+  </head>
+        <!-- BACKGROUND IMAGE -->
+  <body style="background-image: url('https://github.com/zer0shka/mypage/blob/main/peakpx.jpg?raw=true'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div id="overlay">
+      Click to enter
+      </div>  
+      <main>
+          <div class="container">
+              <div class="audio-bg">
+                <a id="audio-control">
+                  <svg fill='#d8d8d8' width="18px" height="18px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m2 7.5v3c0 .8.6 1.5 1.4 1.5h2.3l3.2 2.8c.1.1.3.2.4.2s.2 0 .3-.1c.2-.1.4-.4.4-.7v-.9l-7.2-7.2c-.5.2-.8.8-.8 1.4zm8 2v-5.8c0-.3-.1-.5-.4-.7-.1 0-.2 0-.3 0s-.3 0-.4.2l-2.8 2.5-4.1-4.1-1 1 3.4 3.4 5.6 5.6 3.6 3.6 1-1z" fill-rule="evenodd"/></svg>
+              </a>
+                  <audio id="myAudio" loop muted>
+                    <!-- ADD UR MUSIC HERE -->
+                      <source src="https://cdn.discordapp.com/attachments/852928141395886120/1216043873609060453/Rory_in_early_20s_-_red_blooms.mp3?ex=65fef41c&is=65ec7f1c&hm=7870eed7aedfe5bfb947dd539079bb7cd0e1cf8132f4e5b2c3a62a3c80a7ee7d&" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                  </audio>
+              </div>
+              <div class="profile-container">
+                  <div class="card">
+                      <div class="pfp">
+                          <img src="https://cdn.discordapp.com/attachments/1077615462759804968/1199053925240811530/28b87e26a233def3c37d4f0304ffc239.png?ex=65f883fd&is=65e60efd&hm=dcc8003599e1c500b566d28facbd1151ddfc477eb00d489654a9711e99c8dec0&">
+                      </div>
+                      <div class="username">
+                            <!-- USERNAME -->
+                          <a>whyaliv3</a>
+                      </div>
+                      <div class="status">
+                          <a id="typewriter" class="typewriter"></a>
+                        </div>
+                        <div class="badges-container">
+                        <div class="badges">
+
+
+                          
+                          <!--hypesquad BADGE-->
+                          <div class="tooltip" data-text="Balance">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>HypeSquad Badge: House of Balance</title><path d="M31.63,15.73,16.27.37a.37.37,0,0,0-.52,0h0L.37,15.73a.37.37,0,0,0,0,.52h0L15.73,31.63a.37.37,0,0,0,.52,0h0L31.63,16.27a.37.37,0,0,0,0-.52ZM25,12.29l-3,5.79a.22.22,0,0,0,.12.28h1.89a.2.2,0,0,1,.18.23.17.17,0,0,1-.07.14l-7.92,5.72a.26.26,0,0,1-.24,0L8,18.74a.22.22,0,0,1,0-.3H8a.24.24,0,0,1,.13-.07H9.9a.22.22,0,0,0,.22-.22h0v-.07l-3-5.79A.22.22,0,0,1,7.22,12a.17.17,0,0,1,.14,0l7.12,4.67a.65.65,0,0,1,.29.32l1.09,2.18a.19.19,0,0,0,.26.09.22.22,0,0,0,.1-.09L17.27,17a1,1,0,0,1,.29-.32L24.68,12a.21.21,0,0,1,.28.1h0A.2.2,0,0,1,25,12.29Z" fill="#45ddc0"/></svg>
+                          </div>
+
+
+                          <!--developer BADGE-->
+                          <div class="tooltip" data-text="Developer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.47213 4L4 6.47213V17.5279L6.47217 20H17.5278L20 17.5279V6.47213L17.5279 4H6.47213ZM10.8582 16.4255H8.64551C8.64551 14.5952 7.1567 13.1064 5.32642 13.1064V10.8936C7.1567 10.8936 8.64551 9.40483 8.64551 7.57454H10.8582C10.8582 9.39042 9.96684 10.9908 8.61129 12C9.96684 13.0093 10.8582 14.6096 10.8582 16.4255ZM18.6667 13.1064C16.8364 13.1064 15.3476 14.5952 15.3476 16.4255H13.1348C13.1348 14.6096 14.0263 13.0093 15.3818 12C14.0263 10.9908 13.1348 9.39042 13.1348 7.57454H15.3476C15.3476 9.40483 16.8364 10.8936 18.6667 10.8936V13.1064V13.1064Z" fill="#2EA967"/></svg>
+                              <defs>
+                                <rect id="a" width="42" height="32"/>
+                                <polygon id="c" points="0 .095 0 3.02 3.798 3.02 3.798 .095 0 .095"/>
+                                <polygon id="e" points=".136 29.681 37.097 29.681 37.097 .307 .136 .307"/>
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <mask id="b" fill="white">
+                                  <use xlink:href="#a"/>
+                                </mask>
+                                <g transform="translate(0 1)" mask="url(#b)">
+                                  <g transform="translate(0 7.671)">
+                                    <mask id="d" fill="white">
+                                      <use xlink:href="#c"/>
+                                    </mask>
+                                    <path fill="#4F5D7F" d="M3.79846047,1.55738298 C3.79846047,0.759510638 3.12027442,0.0947234043 2.30632093,0.0947234043 L1.49236744,0.0947234043 C0.678413953,0.0947234043 -9.76744186e-05,0.759510638 -9.76744186e-05,1.55738298 C-9.76744186e-05,2.35525532 0.678413953,3.02004255 1.49236744,3.02004255 L2.30632093,3.02004255 C3.12027442,3.02004255 3.79846047,2.35525532 3.79846047,1.55738298" mask="url(#d)"/>
+                                  </g>
+                                  <g transform="translate(4.884 .012)">
+                                    <mask id="f" fill="white">
+                                      <use xlink:href="#e"/>
+                                    </mask>
+                                    <path fill="#4F5D7F" d="M35.6782837,8.81802128 C33.2364233,3.63185106 28.081493,0.573446809 22.6550279,0.307276596 L7.32567907,0.307276596 C5.9689814,0.307276596 5.01926047,1.37131915 5.01926047,2.56812766 C5.01926047,3.89770213 6.10474884,4.82865957 7.32567907,4.82865957 L11.2596791,4.82865957 C12.0736326,4.82865957 12.7518186,5.49344681 12.7518186,6.29131915 C12.7518186,7.08919149 12.0736326,7.75429787 11.2596791,7.75429787 L1.62800465,7.75429787 C0.814051163,7.75429787 0.135539535,8.41908511 0.135539535,9.21695745 C0.135539535,10.0148298 0.814051163,10.679617 1.62800465,10.679617 L8.5466093,10.679617 C9.36056279,10.679617 10.0387488,11.3447234 10.0387488,12.1425957 C10.0387488,12.9404681 9.36056279,13.6052553 8.5466093,13.6052553 L4.20530698,13.6052553 C3.39135349,13.6052553 2.71316744,14.2700426 2.71316744,15.0679149 C2.71316744,15.8657872 3.39135349,16.5308936 4.20530698,16.5308936 L7.18991163,16.5308936 C7.32567907,18.1266383 7.73265581,19.722383 8.41084186,21.1850426 C11.8024233,28.4989787 20.7559116,31.6904681 28.2169349,28.3658936 C35.949493,24.9085532 39.205307,16.1319574 35.6782837,8.81802128" mask="url(#f)"/>
+                                  </g>
+                                  <path fill="#ECEFF8" d="M23.4174744,7.36289362 C27.7070093,5.43204255 32.7811953,7.27576596 34.7509628,11.4805532 C36.7207302,15.6853404 34.8401721,20.6592766 30.5503116,22.5901277 C26.2607767,24.5209787 21.1865907,22.6772553 19.2168233,18.4724681 C17.2470558,14.2676809 19.1279395,9.29374468 23.4174744,7.36289362"/>
+                                  <path fill="#B7C2CE" d="M30.2519488,10.1595638 L32.9650186,14.6809468 C33.100786,14.9467979 33.100786,15.079883 32.9650186,15.345734 L30.2519488,19.867117 C30.1161814,20.1329681 29.8449721,20.1329681 29.7092047,20.1329681 L24.418507,20.1329681 C24.1472977,20.1329681 24.0115302,19.999883 23.8760884,19.867117 L21.162693,15.345734 C21.0272512,15.079883 21.0272512,14.9467979 21.162693,14.6809468 L23.8760884,10.1595638 C24.0115302,9.89371277 24.2830651,9.89371277 24.418507,9.89371277 L29.7092047,9.89371277 C29.9807395,9.76062766 30.1161814,9.89371277 30.2519488,10.1595638"/>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+
+                          <!--DISCORD Server owner BADGE-->
+                          <div class="tooltip" data-text="Server_owner">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+                            <path fill="#faa61a" d="M 13.6572 5.42868 C 13.8879 5.29002 14.1806 5.30402 14.3973 5.46468 C 14.6133 5.62602 14.7119 5.90068 14.6473 6.16202 L 13.3139 11.4954 C 13.2393 11.7927 12.9726 12.0007 12.6666 12.0007 H 3.33325 C 3.02725 12.0007 2.76058 11.792 2.68592 11.4954 L 1.35258 6.16202 C 1.28792 5.90068 1.38658 5.62602 1.60258 5.46468 C 1.81992 5.30468 2.11192 5.29068 2.34325 5.42868 L 5.13192 7.10202 L 7.44592 3.63068 C 7.46173 3.60697 7.48377 3.5913 7.50588 3.57559 C 7.5192 3.56612 7.53255 3.55663 7.54458 3.54535 L 6.90258 2.90268 C 6.77325 2.77335 6.77325 2.56068 6.90258 2.43135 L 7.76458 1.56935 C 7.89392 1.44002 8.10658 1.44002 8.23592 1.56935 L 9.09792 2.43135 C 9.22725 2.56068 9.22725 2.77335 9.09792 2.90268 L 8.45592 3.54535 C 8.46794 3.55686 8.48154 3.56651 8.49516 3.57618 C 8.51703 3.5917 8.53897 3.60727 8.55458 3.63068 L 10.8686 7.10202 L 13.6572 5.42868 Z M 2.66667 12.6673 H 13.3333 V 14.0007 H 2.66667 V 12.6673 Z"/>
+                          </svg>
+                            </svg>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="links-container">
+                      <div class="links">
+                          <div class="link" id="connection">
+                              <p>Tiktok</p>
+                              <div class="link-content">
+                                  <h4>zer0shka</h4>
+                                  <a href="https://www.tiktok.com/@zer0shka" target="_blank">
+                                      <div class="tooltip" data-text="View Link">
+                                      <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                      <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 3h7v7M27.5 4.5L20 12M17 5H8a3 3 0 00-3 3v16a3 3 0 003 3h16a3 3 0 003-3v-9"/>
+                                    </svg>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <!-- <div class="link" id="connection">
+                              <p>Website</p>
+                              <div class="link-content">
+                                  <h4>Moonhub.lol</h4>
+                                  <a href="" target="_blank">
+                                      <div class="tooltip" data-text="View Link">
+                                      <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                      <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 3h7v7M27.5 4.5L20 12M17 5H8a3 3 0 00-3 3v16a3 3 0 003 3h16a3 3 0 003-3v-9"/>
+                                    </svg>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>-->
+                          <div class="link" id="connection"> 
+                              <p>Github</p>
+                              <div class="link-content">
+                                  <h4>whyalive</h4>
+                                  <a href="https://github.com/zer0shka" target="_blank">
+                                      <div class="tooltip" data-text="View Link">
+                                      <svg width="20px" height="20px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                      <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 3h7v7M27.5 4.5L20 12M17 5H8a3 3 0 00-3 3v16a3 3 0 003 3h16a3 3 0 003-3v-9"/>
+                                    </svg>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          
+                          </div>
+                      </div>
+                  </div>
+              </div>            
+      </main>
+      <script>
+        // Audio control
+        const audio = document.getElementById("myAudio");
+        const audioControl = document.getElementById("audio-control");
+
+        audioControl.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.muted = false;
+                audio.play();
+                audioControl.innerHTML = `<svg fill='#d8d8d8' width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m2 7.5v3c0 .8.6 1.5 1.4 1.5h2.3l3.2 2.8c.1.1.3.2.4.2s.2 0 .3-.1c.2-.1.4-.4.4-.7v-.9l-7.2-7.2c-.5.2-.8.8-.8 1.4zm8 2v-5.8c0-.3-.1-.5-.4-.7-.1 0-.2 0-.3 0s-.3 0-.4.2l-2.8 2.5-4.1-4.1-1 1 3.4 3.4 5.6 5.6 3.6 3.6 1-1z" fill-rule="evenodd"/></svg>`;
+            } else {
+                audio.muted = true;
+                audio.pause();
+                audioControl.innerHTML = `<svg width="18px" height="18px" viewBox="-1 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-65.000000, -3803.000000)" fill="#d8d8d8"><g id="icons" transform="translate(56.000000, 160.000000)"><path d="M18.074,3650.7335 L12.308,3654.6315 C10.903,3655.5815 9,3654.5835 9,3652.8985 L9,3645.1015 C9,3643.4155 10.903,3642.4185 12.308,3643.3685 L18.074,3647.2665 C19.306,3648.0995 19.306,3649.9005 18.074,3650.7335" id="play-[#1000]"></path></g></g></g></svg>`;
+            }
+        });
+
+        // Overlay control
+        const overlay = document.getElementById("overlay");
+
+        overlay.addEventListener("click", () => {
+            overlay.classList.add("hidden");
+            audio.muted = false;
+            audio.play();
+        });
+    </script>
+
+  <script>
+    
+      var txt = 'derealization'; // Edit ur about me here
+      var speed = 200; 
+      var eraseSpeed = 80;
+      var loopCount = 0;
+      var maxLoop = 0; 
+      var forward = true; 
+      
+      function typeWriter() {
+        var typewriter = document.getElementById("typewriter");
+        var textLength = txt.length;
+        
+        if (forward) {
+          if (typewriter.innerHTML.length < textLength) {
+            typewriter.innerHTML += txt.charAt(typewriter.innerHTML.length);
+            setTimeout(typeWriter, speed);
+          } else {
+            forward = false;
+            setTimeout(typeWriter, speed * 3); 
+          }
+        } else {
+          if (typewriter.innerHTML.length > 0) {
+            typewriter.innerHTML = typewriter.innerHTML.slice(0, -1);
+            setTimeout(typeWriter, eraseSpeed);
+          } else {
+            forward = true;
+            setTimeout(typeWriter, speed * 3); 
+          }
+        }
+      }
+      
+      window.onload = function() {
+        typeWriter();
+      };
+    </script>
+  </body>
+  </html>
